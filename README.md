@@ -3,7 +3,7 @@
  ### <u> What is a web scraper? </u>
  Websites currently contain a wealth of valuable information.When gathering this information, you will almost definitely find yourself manually copying and pasting.You need a simple and more automated method for this, which is where web scraping comes in.
 
- Web scraping is imply the automated extraction of a web page's unstructured HTML information in a specified format, structuring it, and storing it in a database or saving it as a CSV file for future consumption.
+ Web scraping is simply the automated extraction of a web page's unstructured HTML information in a specified format, structuring it, and storing it in a database or saving it as a CSV file for future consumption.
 
 ### How to scrape the web?
 1. Find the URLs you want to scrape
@@ -16,18 +16,14 @@
 3. Pandas
 4. Parsehub
 
-## In this tutorial, we'll look at web scraping using Beautiful Soup and Requests. We'll build a web scrapper app with Flask, Python's most lightweight web framework.
+### In this tutorial, we'll look at web scraping using Beautiful Soup and Requests. We'll build a web scrapper app with Flask, Python's most lightweight web framework.
 How it works
 1. Load the application
 2. Provide a target URL and a tag to be fetched example img,p, title
 3. Receive a response - the requested element(s) content.
 4. For images, there will be a download functionality that will save the images to your downloads directory
 
-### Project details.
-Our primary discussion files will be as follows:
 
-##### app.py
-##### templates/index.html
 ### app.py
 We will utilize Flask, Beautiful Soup, and request libraries. First and foremost, we'll import some functionality from Flask and Beautiful Soup into the app.py file.
 

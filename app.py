@@ -56,7 +56,7 @@ def index():
             utilize html.parser as our parsing library'''
             soup = BeautifulSoup(source, "html.parser")
 
-            '''we navigate through the tree to discover the element we require. The tag that
+            '''we navigate to discover the element we require. The tag that
              the user will enter in the form field'''
             specific_element = soup.find_all(tag)
             
