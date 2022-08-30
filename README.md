@@ -90,4 +90,9 @@ check code line 39-...
 The uuid library is used by the download function above to produce unique names for the downloaded files.
      
 
+#### RUNNING THE APP
+     py -m venv venv
+     venv\Scripts\activate
+     pip install -r requirements.txt
+     python app.py
     
