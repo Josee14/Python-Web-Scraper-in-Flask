@@ -1,6 +1,13 @@
 # Python-Web-Scraper-in-Flask
 
- ### <u> What is a web scraper? </u>
+
+
+### What is Flask?
+Flask is a popular Python micro web framework that helps you develop lightweight web applications and APIs quickly and easily.
+
+As a web framework, it provides greater flexibility, customization, and scalability for simple web applications while remaining highly compatible with cutting-edge technologies.
+
+ ###  What is a web scraping? 
  Websites currently contain a wealth of valuable information.When gathering this information, you will almost definitely find yourself manually copying and pasting.You need a simple and more automated method for this, which is where web scraping comes in.
 
  Web scraping is simply the automated extraction of a web page's unstructured HTML information in a specified format, structuring it, and storing it in a database or saving it as a CSV file for future consumption.
@@ -56,5 +63,31 @@ We will utilize Flask, Beautiful Soup, and request libraries. First and foremost
 check code line 39-...
 
 ### Downloading images
+     @app.route("/download",methods=("GET", "POST"), strict_slashes=False)
+     def downloader():
+     try:
+          for img in image_handler(tag,specific_element,requested_url):
+               image_url = img
+
+               filename = str(uuid.uuid4())
+               file_ext = pathlib.Path(image_url).suffix
+
+               picture_filename = filename + file_ext
+
+               downloads_path = str(pathlib.Path.home() / "Downloads")
+
+               picture_path  = os.path.join(downloads_path, picture_filename
+               )
+
+
+          flash("Images saved in your Downloads directory", "success")
+
+     except Exception as e:
+          flash(e, "danger")
+
+     return redirect(url_for('index'))
+
+The uuid library is used by the download function above to produce unique names for the downloaded files.
+     
 
     
