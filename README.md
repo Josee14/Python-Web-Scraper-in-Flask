@@ -12,6 +12,20 @@ As a web framework, it provides greater flexibility, customization, and scalabil
 
  Web scraping is simply the automated extraction of a web page's unstructured HTML information in a specified format, structuring it, and storing it in a database or saving it as a CSV file for future consumption.
 
+
+### What kinds of data can you scrape from the web?
+Common data types organizations collect include images, videos, text, product information, customer sentiments and reviews (on sites like Twitter, Yell), and pricing from comparison websites.
+
+### What is web scraping used for?
+Market research companies use scrapers to pull data from social media or online forums for things like customer sentiment analysis. Others scrape data from product sites like Amazon or eBay to support competitor analysis.
+
+Google regularly uses web scraping to analyze, rank, and index their content.
+Web scraping also allows them to extract information from third-party websites before redirecting it to their own.
+
+Real estate listings, weather data, carrying out SEO audits etc.
+
+
+
 ### How to scrape the web?
 1. Find the URLs you want to scrape
 2. Inspect the page
@@ -23,8 +37,8 @@ As a web framework, it provides greater flexibility, customization, and scalabil
 3. Pandas
 4. Parsehub
 
-### In this tutorial, we'll look at web scraping using Beautiful Soup and Requests. We'll build a web scrapper app with Flask, Python's most lightweight web framework.
-How it works
+### In this tutorial, we'll look at web scraping using Beautiful Soup and Requests.
+### How it works
 1. Load the application
 2. Provide a target URL and a tag to be fetched example img,p, title
 3. Receive a response - the requested element(s) content.
