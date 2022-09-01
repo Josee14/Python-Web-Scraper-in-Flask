@@ -45,7 +45,7 @@ Real estate listings, weather data, carrying out SEO audits etc.
 4. For images, there will be a download functionality that will save the images to your downloads directory
 
 
-### app.py
+
 We will utilize Flask, Beautiful Soup, and request libraries. First and foremost, we'll import some functionality from Flask and Beautiful Soup into the app.py file.
 
 ### We need to validate and parse the URLs we get, so we import the URL handling module for Python- urllib, as well as some other built-in libraries.
