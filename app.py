@@ -39,7 +39,7 @@ def index():
     if request.method == "POST":
 
         try:
-            '''we are writing a function to accept image paths and generate a complete URL from them, 
+            '''since we are writing a function to accept image paths and generate a complete URL from them, 
             the form field inputs must be available globally, so we define them as global variables.'''
             global requested_url,specific_element,tag
            
